@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="DashBoard.css">
+</head>
+<body>
+
+  <h1>Admin Dashboard</h1>
+
+  <div>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button onclick="search()" class="search-icon"><img src="images/search.png"></button>
+  </div>
+
+  
+
+  <div class="bulkB">
+    <button onclick="deleteSelected()" class="bulk-delete"><img src="images/trash-2.png"></button>
+  </div>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="selectAllCheckbox" onclick="selectAll()"> Select All</th>
+        <th></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div class="pagination" id="pagination">
+  </div>
+
+  <button onclick="deleteSelected()">Delete Selected</button>
+
+  <script src="DashBoard.js"></script>
+
+</body>
+</html>
