@@ -3,6 +3,7 @@
 I have used HTML,CSS and JAVASCRIPT for this AdminDashBoard.
 
 Features:
+<br/>
 Can Add and remove client.
 <br/>
 We can search for the employee name.
